@@ -1,0 +1,5 @@
+1. Copy gnupg to /usr/local/bin
+
+2. Copy man/gnupg.1 to /usr/local/share/man/man1
+
+3. Run man gnupg to see the manual page
