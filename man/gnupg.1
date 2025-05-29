@@ -1,0 +1,30 @@
+.TH GNUPG 1 "May 2025" "1.0" "User Commands"
+.SH NAME
+gnupg \- simple GPG encryption and decryption wrapper
+.SH SYNOPSIS
+.B gnupg
+[\-e | \-d] filename
+.SH DESCRIPTION
+A simple shell script that wraps GPG for encrypting and decrypting files.
+
+.TP
+.B \-e
+Encrypt the given file using GPG and delete the original.
+
+.TP
+.B \-d
+Decrypt the given .gpg file and restore the original, then delete the .gpg file.
+
+.TP
+.B man
+Show usage instructions.
+
+.SH EXAMPLES
+gnupg -e secret.txt
+
+gnupg -d secret.txt.gpg
+
+
+.SH AUTHOR
+Written by Danny Komen.
+

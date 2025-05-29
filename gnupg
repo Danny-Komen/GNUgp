@@ -1,0 +1,18 @@
+#!/bin/bash
+
+OPTION=$1
+FILE=$2
+
+if [ $OPTION = "-e" ];
+then
+	gpg -c $FILE
+	rm $FILE
+
+elif [ $OPTION = "-d" ];
+then
+	gpg -d $FILE > ${FILE%.gpg}
+	rm $FILE
+else
+	
+	echo "Ivalid input, Visit the man page to get informed"
+fi
